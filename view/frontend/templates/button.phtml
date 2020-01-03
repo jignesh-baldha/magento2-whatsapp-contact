@@ -1,0 +1,19 @@
+
+<?php if ($block->getStatus()): ?>
+<div class="whatsapp-chat">
+    <div class="ring"></div>
+    <div class="whatsapp-button">
+        <a href="https://web.whatsapp.com/send?phone=<?php echo $block->getPhone(); ?>&amp;text=<?php echo $block->getMessage(); ?>"
+           onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_contact', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});"
+           target="_blank" class="btn-web">
+            <img src="<?php echo $this->getViewFileUrl('Baldha_WhatsAppContact::images/whatsapp.png'); ?>" alt="WA button">
+        </a>
+
+        <a href="https://wa.me/<?php echo $block->getPhone(); ?>?text=<?php echo $block->getMessage(); ?>"
+           onclick="gtag('event', 'WhatsApp', {'event_action': 'whatsapp_contact', 'event_category': 'Chat', 'event_label': 'Chat_WhatsApp'});"
+           target="_blank" class="btn-mobile">
+            <img src="<?php echo $this->getViewFileUrl('Baldha_WhatsAppContact::images/whatsapp.png'); ?>" alt="WA button">
+        </a>
+    </div>
+</div>
+<?php endif; ?>

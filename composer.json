@@ -1,0 +1,21 @@
+{
+  "name": "baldha/whatsapp-contact",
+  "description": "Add whatsapp-chat button to magento website",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jignesh Baldha",
+      "email": "iamjignesh.b@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Baldha\\WhatsAppContact\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
